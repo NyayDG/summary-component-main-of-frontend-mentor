@@ -1,0 +1,174 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* -----------------------------------------------CLASS SECTION-------------------------------------------- */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.first-box {
+    text-align: center;
+    width: 290px;
+    height: 420px;
+    background: linear-gradient(180deg, hsla(252, 100%, 67%, 1), hsla(241, 81%, 54%, 1));
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.first-box-number {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.first-box-sub-number {
+    color: #8C7DFF;
+}
+
+.first-box-heading {
+    font-weight: 500;
+}
+
+.second-box {
+    width: 350px;
+    height: 420px;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 270px;
+    bottom: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px 20px;
+    border: none;
+    margin-left: 30px;
+  }
+  
+  .left-text {
+    margin-right: auto;
+    margin-left: 5px;
+    font-weight: 700;
+  }
+  
+  .right-text {
+    margin-left: auto;
+    color: black;
+  }
+  
+  .summary-and-number-color {
+    color: #2e3347;
+    font-weight: 700;
+  }
+/* ------------------------------------------ID SECTION----------------------------------- */
+
+#summary {
+    position: relative;
+    right: 90px;
+}
+
+#reaction {
+    background-color: #FFF6F5;
+    color: #D96565;
+}
+
+#memory {
+    background-color: #FFFBF2;
+    color:  #EDB953;
+}
+
+#verbal {
+    background-color: #F2FBFA;
+    color:  #38B993;
+}
+
+#visual {
+    background-color: #F3F3FD;
+    color:  #202696;
+}
+#continue {
+    width: 250px;
+    border-radius: 36px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color:  #303B59;
+    color: white;
+
+}
+
+/* --------------------------FOOTER------------------------- */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* ---------------------------------MEDIA QUERY--------------------------- */
+/* Add this media query at the end of your CSS file */
+@media (max-width: 357px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .first-box {
+      position: static;
+      margin-bottom: 20px;
+    }
+    
+    .second-box {
+      position: static;
+      margin-left: -20px;
+      margin-top: 20px;
+      width: 290px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .button {
+      margin: 0 5px;
+      flex: 0 0 calc(100%); /* Adjust the width of the buttons as needed */
+    }
+
+    .attribution {
+        position: relative;
+        top: 350px;
+    }
+
+    #summary {
+        position: relative;
+        top: 10px;
+    }
+
+    #continue {
+        position: relative;
+        top: 10px;
+    }
+  }
+  
